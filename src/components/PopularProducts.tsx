@@ -1,21 +1,19 @@
 import { use, useState, type Dispatch, type SetStateAction } from "react";
 import type { IpopularProduct } from "../Types";
+import PopularProductCard from "./PopularProductCard";
+
 
 interface PopularProducts{
     itemPromise: Promise<IpopularProduct[]>;
     cart: IpopularProduct[]
-    setCard: Dispatch<SetStateAction<IpopularProduct[]>>
+    setCart: Dispatch<SetStateAction<IpopularProduct[]>>
 }
 
 const PopularProducts = ({itemPromise, cart, setCart}: PopularProducts) => {
 
     const data = use(itemPromise)
 
-    const handleCart = (product: IpopularProduct) =>{
-        setCart([...cart, product])
-        console.log(cart);
-    }
-
+   
 
     return (
         <div className='my-[40px] w-11/12 mx-auto '>
@@ -38,19 +36,9 @@ const PopularProducts = ({itemPromise, cart, setCart}: PopularProducts) => {
 <div className='col-span-8 '>
         <div className="grid grid-cols-3 gap-4">
             {
-            data.map((product, index) => {
+            data.map((product) => {
                 return (
-                    <div
-                        key={index}
-                        className="bg-white p-4 rounded-md shadow-md">
-                            <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-md transition-transform duration-500"/>
-
-                            <h3 className="font-bold text-lg">{product.name}</h3>
-                            <p className="text-gray-600">${product.price.toFixed(2)}</p>
-                            <p className="text-yellow-500">Rating: {product.rating}</p>
-
-                            <button onClick={() => handleCart(product)} className="bg-mauve-400 text-cyan-950 font-bold p-3 my-2 rounded-md hover:bg-mauve-500 hover:text-black hover:scale-110 transition-transform duration-500">Add to cart</button>
-                    </div>
+                 <PopularProductCard key={product.name} product= {product} cart={cart} setCart={setCart} ></PopularProductCard>  
                 )
             })
         }
