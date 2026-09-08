@@ -1,0 +1,56 @@
+[
+  {
+    "rating": 4.5,
+    "name": "Onion 1 KG",
+    "price": 39.99,
+    "image": "../src/assets/onion.png"
+  },
+  {
+    "rating": 4.7,
+    "name": "Potato 1 KG",
+    "price": 29.99,
+    "image": "../src/assets/tomato.png"
+  },
+  {
+    "rating": 4.3,
+    "name": "Tomato 1 KG",
+    "price": 49.99,
+    "image": "../src/assets/potato.png"
+  },
+  {
+    "rating": 4.8,
+    "name": "Carrot 1 KG",
+    "price": 59.99,
+    "image": "../src/assets/tomato.png"
+  },
+  {
+    "rating": 4.6,
+    "name": "Cucumber 1 KG",
+    "price": 44.99,
+    "image": "../src/assets/onion.png"
+  },
+  {
+    "rating": 4.4,
+    "name": "Garlic 500 GM",
+    "price": 69.99,
+    "image": "../src/assets/potato.png"
+  },
+  {
+    "rating": 4.9,
+    "name": "Apple 1 KG",
+    "price": 149.99,
+    "image": "../src/assets/potato.png"
+  },
+  {
+    "rating": 4.5,
+    "name": "Banana 1 Dozen",
+    "price": 89.99,
+    "image": "../src/assets/onion.png"
+  },
+  {
+    "rating": 4.7,
+    "name": "Orange 1 KG",
+    "price": 119.99,
+    "image": "../src/assets/tomato.png"
+  }
+]

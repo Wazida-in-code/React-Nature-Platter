@@ -3,7 +3,7 @@ import Service from '../assets/service.png'
 
 const Services = () => {
     return (
-        <div className='my-[40px] container mx-auto '>
+        <div className='my-[40px] w-11/12 mx-auto '>
             <h2 className='text-green-600 mb-4 font-bold text-3xl'>Services</h2>
             <div className='grid grid-cols-3 gap-4 py-8 '>
                 <div className='shadow-2xl rounded-md py-4'>
